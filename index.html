@@ -1,8 +1,22 @@
 <html>
-  <head>
-   
-  </head>
+  <head></head>
   <body>
-    <h1>Hello</h1>
+    <script>
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function(){
+      if (this.readyState ==4 && this.status== 200){
+     var mydata= JSON.parse(this.responseText);//gets the json file and says its as mydata
+     window.alert(mydata.name);
+     
+      }
+  
+    };
+    xmlhttp.open("GET","sample.json",true);
+    xmlhttp.send();
+    //do this function when a criteria is met
+    //4 means ready
+    //200 means ok
+    </script>
+  
   </body>
 </html>

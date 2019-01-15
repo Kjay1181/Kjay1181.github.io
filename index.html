@@ -6,12 +6,12 @@
     xmlhttp.onreadystatechange=function(){
       if (this.readyState ==4 && this.status== 200){
      var mydata= JSON.parse(this.responseText);//gets the json file and says its as mydata
-     window.alert(mydata.name);
+     window.alert(mydata.price);
      
       }
   
     };
-    xmlhttp.open("GET","sample.json",true);
+    xmlhttp.open("GET","bento.json",true);
     xmlhttp.send();
     //do this function when a criteria is met
     //4 means ready

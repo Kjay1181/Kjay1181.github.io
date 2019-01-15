@@ -4,9 +4,26 @@
       "type":"salmon",
       "price":7.79,
       "ingredients":[
-        "rice","lemon","gobo","ube","edamame"
+        "rice",
+        "lemon",
+        "gobo",
+        "ube",
+        "edamame"
+       ]
+       },
+    {
+      "type":"soft shell krab",
+      "price":9.99,
+      "ingredients":[
+        "rice",
+        "ume",
+        "lemon",
+        "krab",
+        "furikake",
+        "tears",
+        "knowledge"
        ]
        }
-    
+
     ]
 }

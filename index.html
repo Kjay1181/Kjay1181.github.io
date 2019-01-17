@@ -2,29 +2,30 @@
   <head>
     <style>
       #one{
-        height:500px;
-        width:500px;
+        height:250px;
+        width:250px;
         background-image:url("https://www.imperialsugar.com/sites/default/files/styles/recipe_image_node_full/public/recipe/Cinnamon-Sugar-Banana-Lumpia-imperial.jpg?itok=p_hH7X-M");
         background-size:cover;
+        float:left;
+        margin:75px;
+      }
+      #title{
+        position:absolute;
+        left:500px;
       }
     </style>
   </head>
   <body>
-    <div id="one"></div>
-    <script>
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function(){
-      if (this.readyState ==4 && this.status== 200){
-     var mydata= JSON.parse(this.responseText);//gets the json file and says its as mydata
-     window.alert(mydata.bento[1].ingredients[1]);
-     
-      }
-    };
-    xmlhttp.open("GET","bento.json",true);
-    xmlhttp.send();
-    //do this function when a criteria is met
-    //4 means ready
-    //200 means ok
+    <h1 id="title">The Best Lumpia </h1>
+    <div id="one">
+      <h1>Banana lumpia</h1>
+      <input type="text" id="userInput">
+ <button onclick="addItem()">Check in</button>
+      
+    </div>
+    
+    <script src="rest.js">
+  
     </script>
   
   </body>

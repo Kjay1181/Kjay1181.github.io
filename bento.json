@@ -1,8 +1,8 @@
 {
-  "bento":[
+  "lumpia":[
       {
-      "type":"salmon",
-      "price":7.79,
+      "type":"Banana",
+      "price":2.00,
       "ingredients":[
         "rice",
         "lemon",
@@ -12,8 +12,8 @@
        ]
        },
     {
-      "type":"soft shell krab",
-      "price":9.99,
+      "type":"beef",
+      "price":1.50,
       "ingredients":[
         "rice",
         "ume",

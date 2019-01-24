@@ -8,7 +8,7 @@
     xmlhttp.onreadystatechange=function(){
     if (this.readyState ==4 && this.status== 200){
     var mydata= JSON.parse(this.responseText);//gets the json file and says its as mydata
-      window.alert("name");
+      window.alert("name"[0]);
       }
     };
     xmlhttp.open("GET","sample.json",true);

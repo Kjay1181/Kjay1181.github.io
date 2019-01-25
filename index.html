@@ -6,55 +6,40 @@
         width:250px;
         background-image:url("https://www.imperialsugar.com/sites/default/files/styles/recipe_image_node_full/public/recipe/Cinnamon-Sugar-Banana-Lumpia-imperial.jpg?itok=p_hH7X-M");
         background-size:cover;
-        float:left;
-        margin:75px;
+        margin:50px;
       }
       #title{
-        position:absolute;
+        position:relative;
         left:500px;
       }
+      #list{
+        background-color:orange;
+        height:300px;
+        width:1000px;
+      }
+      #name{
+        
+      }
     </style>
+    <link rel="stylesheet" type="text/css" href="design.css">
   </head>
   <body>
     <h1 id="title">The Best Lumpia </h1>
    
     <div id="one">
-      <h1>Banana lumpia</h1>
+      <h1 id="name"></h1>
+      <h2>enter amount</h2>
       <input type="text" id="userInput">
- <button onclick="addItem()">Order</button>
-    </div>
-        <div id="one">
-      <h1>Beef lumpia</h1>
-      <input type="text" id="userInput">
- <button onclick="addItem()">Order</button>
-      
-    </div>
-        <div id="one">
-      <h1>Chicken lumpia</h1>
-      <input type="text" id="userInput">
- <button onclick="addItem()">Order</button>
-      
-    </div>
-        <div id="one">
-      <h1>Adobo lumpia</h1>
-      <input type="text" id="userInput">
- <button onclick="addItem()">Order</button>
-      
-    </div>
-        <div id="one">
-      <h1>Fish lumpia</h1>
-      <input type="text" id="userInput">
- <button onclick="addItem()">Order</button>
-      
-    </div>
-        <div id="one">
-      <h1>Ubod lumpia</h1>
-      <input type="text" id="userInput">
- <button onclick="addItem()">Order</button>
-      
+ <button onclick="buyItem()">Order</button>
+ <p id=quantity>
     </div>
     
-  <button onclick()="total()">Check Out</button>
+    <div id="list">
+      <h1>You ordered</h1>
+      <p id="display"></p>
+    </div>
+  <button onclick()="nextPage()">Check Out</button>
+        
   <script src="rest.js">
     </script>
   </body>

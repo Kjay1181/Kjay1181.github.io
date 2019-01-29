@@ -5,7 +5,8 @@
     xmlhttp.onreadystatechange=function(){
     if (this.readyState ==4 && this.status== 200){
     var menuData= JSON.parse(this.responseText);//gets the json file and saves its as mydata
-        $.getElementById("name").innerHTML=menuData.lumpia[0].price;
+        $.getElementById("bananaTitle").innerHTML=menuData.lumpia[0].type;
+        $.getElementById("bananaPrice").innerHTML=menuData.lumpia[0].price;
       }
     };
     xmlhttp.open("GET","bento.json",true);

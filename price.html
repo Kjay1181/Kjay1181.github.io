@@ -1,0 +1,16 @@
+
+<html>
+  <body>
+    <h1>Enter price</h1>
+    <input type="text" id="priceInput">
+    <button onclick="next()">Enter</button>
+    
+    <script>
+      var y=document.getElementById("priceInput").value;//ask the boss for the price of the ramen
+function next(){
+      localStorage.setItem("price",y);
+      location.href="results.html";// Go to another page
+}
+    </script>
+  </body>
+</html>

@@ -1,10 +1,11 @@
-var tax = 1.04712;
-
+ var tax = 1.04712;
+ var $= document;
+ var lumpia=[];
  var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange=function(){
     if (this.readyState ==4 && this.status== 200){
-    var myData= JSON.parse(this.responseText);//gets the json file and saves its as mydata
-        document.getElementById("name").innerHTML=myData.lumpia[0].price;
+    var menuData= JSON.parse(this.responseText);//gets the json file and saves its as mydata
+        $.getElementById("name").innerHTML=menuData.lumpia[0].type;
       }
     };
     xmlhttp.open("GET","bento.json",true);
@@ -16,14 +17,18 @@ var tax = 1.04712;
    
   
   function buyItem(){
-    var order= document.getElementById("userInput").value;
+    var order= $.getElementById("userInput").value;
     var price= order*2.00;
-    var total=document.getElementById("quantity").innerHTML= "you ordered"+" "+"$"+price+ " of Banana Lumpia";
-  
+    var total=$.getElementById("quantity").innerHTML= "you ordered"+" "+"$"+price+ " of Banana Lumpia";
+    lumpia.push(total);
+    $.getElementById("display").innerHTML=lumpia;
   }
+    
   
   function nextPage(){
-       var x=document.getElementById("userInput").value;//finds the value when button is clicked
+ 
+   var x=$.getElementById("userInput").value;//finds the value when button is clicked
       localStorage.setItem("lumpia",x);// set the value
       location.href="results.html";
+      
   }

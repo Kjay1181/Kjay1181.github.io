@@ -1,4 +1,5 @@
-#one{
+
+      #one{
         height:250px;
         width:250px;
         background-image:url("https://www.imperialsugar.com/sites/default/files/styles/recipe_image_node_full/public/recipe/Cinnamon-Sugar-Banana-Lumpia-imperial.jpg?itok=p_hH7X-M");
@@ -15,8 +16,5 @@
         width:1000px;
       }
       #name{
-        font-size:10px;
-      }
-      #price{
-        font-size:10px;
+       font-size:10px;
       }

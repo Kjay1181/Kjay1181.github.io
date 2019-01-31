@@ -5,7 +5,7 @@
       #one{
         height:250px;
         width:250px;
-        background-image:url("bananaLumpia.jpeg");
+        background-image:url("bananaLumpia.jpg");
         background-size:cover;
         margin:50px;
       }
@@ -22,7 +22,7 @@
         font-size:30px
       }
       #subtotal{
-        background-color:orange;
+        background-color:#8AAAE5;
         height:300px;
         width:1000px;
       }

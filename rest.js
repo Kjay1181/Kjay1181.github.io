@@ -18,10 +18,12 @@
    
   
   function buyItem(){
-    var order= $.getElementById("userInput").value;
-    var price= order*2.00;
-    var total=$.getElementById("quantity").innerHTML= "you ordered"+" "+"$"+price+ " of Banana Lumpia";
-    document.getElementById("userInput").value="";//clears the input box
+    var amount= $.getElementById("userInput").value;
+    var price= amount*2.00;
+    var total=$.getElementById("quantity").innerHTML= "you bought"+" "+"$"+price+ " of Banana Lumpia";
+    document.getElementById("userInput").value="";
+    //clears the input box
+    
       var li= document.createElement('li');
       var newText=document.createTextNode(total);
     li.appendChild(newText);

@@ -21,8 +21,12 @@
     var order= $.getElementById("userInput").value;
     var price= order*2.00;
     var total=$.getElementById("quantity").innerHTML= "you ordered"+" "+"$"+price+ " of Banana Lumpia";
-    lumpia.push(total);
-    $.getElementById("display").innerHTML=lumpia;
+    document.getElementById("userInput").value="";//clears the input box
+      var li= document.createElement('li');
+      var newText=document.createTextNode(total);
+    li.appendChild(newText);
+      var olTag=document.getElementById("recipt");
+      olTag.appendChild(li);
   }
     
   

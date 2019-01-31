@@ -1,13 +1,13 @@
 {
   "lumpia":[
       {
-      "type":"Banana Lumpia",
-      "price":"$2.00",
+      "type":"Banana",
+      "price":2.00,
       "ingredients":[
-        "Banana",
-        "Caramel",
-        "Dough",
-        "Sugar",
+        "rice",
+        "lemon",
+        "gobo",
+        "ube",
         "edamame"
        ]
        },
@@ -15,10 +15,13 @@
       "type":"beef",
       "price":1.50,
       "ingredients":[
-        "Beef",
-        "Dough",
-        "Carrots"
-        
+        "rice",
+        "ume",
+        "lemon",
+        "krab",
+        "furikake",
+        "tears",
+        "knowledge"
        ]
        }
 

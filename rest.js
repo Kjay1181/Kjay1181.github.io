@@ -24,10 +24,10 @@
     document.getElementById("userInput").value="";
     //clears the input box
     
-      var li= document.createElement('li');
-      var newText=document.createTextNode(total);
-    li.appendChild(newText);
-      var olTag=document.getElementById("recipt");
+      var li= document.createElement('li');//creates a lists
+      var newText=document.createTextNode(total);// gets total and saves it as newtext
+    li.appendChild(newText);//puts newtext and total together
+      var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
   }
     

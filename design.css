@@ -28,5 +28,10 @@
       }
       #quantity{
         font-size:15px;
+        font-weight:bold;
       }
       
+      #display{
+        font-size:15px;
+        font-weight:bold;
+      }

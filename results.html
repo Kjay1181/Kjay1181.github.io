@@ -1,28 +1,27 @@
 <html>
   <head>
     <style>
-      #box{
-        position:absolute;
-        top:100px;
-        left:450px;
-        background-color:#ffffff;
-        height:500px;
-        width:500px;
-      }
-      #list{
-        font-size:25px;
-      }
-      
+    #box{
+      position:absolute
+      top:100px;
+      left:450px;
+      background-color:#ffffff;
+      height:500px;
+      width:500px;
+    }
+    #list{
+      font-size:25px;
+    }
     </style>
   </head>
-<body bgcolor="#8AAAE5">
-  <div id="box">
-  <h1>Recipt</h1>
-  <p id ="list"></p>
+  <body bgcolor="#8AAAE5">
+    <div id="box">
+    <h1>Recipt</h1>
+    <p id="list"></p>
   </div>
   <script>
-      var show=localStorage.getItem("lumpia");
-    document.getElementById("list").innerHTML=show;
+  var show=localStorage.getItem("lumpia");
+  document.getElementById('list').innerHTML=show;
   </script>
-</body>
+  </body>
 </html>

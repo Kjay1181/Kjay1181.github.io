@@ -64,7 +64,7 @@ var lumpia=[];
    var user=$.getElementById("userInputTwo").value;
    var priceTwo= p2*user;
    document.getElementById("userInputTwo").value="";
-   var total= "you bought"+" "+price.toFixed(2)+" " +"of chicken Lumpia";
+   var total= "you bought"+" "+priceTwo.toFixed(2)+" " +"of chicken Lumpia";
      var li= document.createElement('li');//creates a lists
       var newText=document.createTextNode(total);// gets total and saves it as newtext
     li.appendChild(newText);//puts newtext and total together
@@ -76,7 +76,7 @@ var lumpia=[];
    var user=$.getElementById("userInputThree").value;
    var priceThree= p3*user;
    document.getElementById("userInputThree").value="";
-   var total= "you bought"+" "+price.toFixed(2)+" " +"of shrimp Lumpia";
+   var total= "you bought"+" "+priceThree.toFixed(2)+" " +"of shrimp Lumpia";
      var li= document.createElement('li');//creates a lists
       var newText=document.createTextNode(total);// gets total and saves it as newtext
     li.appendChild(newText);//puts newtext and total together
@@ -88,7 +88,7 @@ var lumpia=[];
    var user=$.getElementById("userInputFour").value;
    var priceFour= p4*user;
    document.getElementById("userInputFour").value="";
-   var total= "you bought"+" "+price.toFixed(2)+" " +"of Beef Lumpia";
+   var total= "you bought"+" "+priceFour.toFixed(2)+" " +"of Beef Lumpia";
      var li= document.createElement('li');//creates a lists
       var newText=document.createTextNode(total);// gets total and saves it as newtext
     li.appendChild(newText);//puts newtext and total together
@@ -99,7 +99,7 @@ var lumpia=[];
  function buyItemFive(){
    var user=$.getElementById("userInputFive").value;
    var priceFive= p5*user;
-   var total= "you bought"+" "+price.toFixed(2)+" " +"of Veggie Lumpia";
+   var total= "you bought"+" "+priceFive.toFixed(2)+" " +"of Veggie Lumpia";
      var li= document.createElement('li');//creates a lists
       var newText=document.createTextNode(total);// gets total and saves it as newtext
     li.appendChild(newText);//puts newtext and total together
@@ -112,7 +112,7 @@ var lumpia=[];
    var user=$.getElementById("userInputSix").value;
    var priceSix= p6*user;
    document.getElementById("userInputSix").value="";
-   var total= "you bought"+" "+price.toFixed(2)+" " +"of Pork Lumpia";
+   var total= "you bought"+" "+priceSix.toFixed(2)+" " +"of Pork Lumpia";
      var li= document.createElement('li');//creates a lists
       var newText=document.createTextNode(total);// gets total and saves it as newtext
     li.appendChild(newText);//puts newtext and total together

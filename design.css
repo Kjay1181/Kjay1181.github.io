@@ -18,16 +18,16 @@
       }
      
       #bananaPrice{
-        font-size:30px
+        font-size:30px;
       }
       #amount{
-        font-size:30px
+        font-size:30px;
       }
       
       #two{
         height:250px;
         width:250px;
-        background-color:green;
+       background-image:url("chickenlumpia.jpg");
         background-size:cover;
        position:absolute;
        left:350px;
@@ -40,15 +40,15 @@
       }
      
       #bananaPriceTwo{
-        font-size:30px
+        font-size:30px;
       }
       #amountTwo{
-        font-size:30px
+        font-size:30px;
       }
       #three{
         height:250px;
         width:250px;
-        background-color:red;
+       background-image:url("shrimpLumpia.jpg");
         background-size:cover;
        position:absolute;
        left:650px;
@@ -56,21 +56,21 @@
       }
      
       
-      #bananaTitleThre50e{
+      #bananaTitleThree{
        font-size:25px;
       }
      
       #bananaPriceThree{
-        font-size:30px
+        font-size:30px;
       }
       #amountThree{
-        font-size:30px
+        font-size:30px;
       }
       
          #four{
         height:250px;
         width:250px;
-        background-color:yellow;
+        background-image:url("beefLumpia.jpg");
         background-size:cover;
        position:absolute;
        left:50px;
@@ -83,16 +83,16 @@
       }
      
       #bananaPriceFour{
-        font-size:30px
+        font-size:30px;
       }
       #amountFour{
-        font-size:30px
+        font-size:30px;
       }
       
         #five{
         height:250px;
         width:250px;
-      background-color:purple;
+      background-image:url("veggieLumpia.jpg");
         background-size:cover;
        position:absolute;
        left:350px;
@@ -105,15 +105,15 @@
       }
      
       #bananaPriceFive{
-        font-size:30px
+        font-size:30px;
       }
       #amountFive{
-        font-size:30px
+        font-size:30px;
       }
         #six{
         height:250px;
         width:250px;
-        background-color:pink;
+       background-image:url("porkLumpia.jpg");
         background-size:cover;
        position:absolute;
        left:650px;
@@ -126,10 +126,10 @@
       }
      
       #bananaPriceSix{
-        font-size:30px
+        font-size:30px;
       }
       #amountSix{
-        font-size:30px
+        font-size:30px;
       }
       
       

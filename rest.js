@@ -97,7 +97,7 @@ var lumpia=[];
  function buyItemFive(){
    var user=$.getElementById("userInputFive").value;
    var price= p5*user;
-   document.getElementById("userInputTwo").value="";
+   document.getElementById("userInputFive").value="";
    var total= "you bought"+" "+price.toFixed(2)+" " +"of Veggie Lumpia";
      var li= document.createElement('li');//creates a lists
       var newText=document.createTextNode(total);// gets total and saves it as newtext

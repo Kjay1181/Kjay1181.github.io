@@ -2,28 +2,33 @@
   "lumpia":[
       {
       "type":"Banana Lumpia",
-      "price":2.00,
-      "ingredients":[
-        "rice",
-        "lemon",
-        "gobo",
-        "ube",
-        "edamame"
-       ]
+      "price":2.10
+
        },
     {
-      "type":"beef",
-      "price":1.50,
-      "ingredients":[
-        "rice",
-        "ume",
-        "lemon",
-        "krab",
-        "furikake",
-        "tears",
-        "knowledge"
-       ]
+      "type":"Chicken",
+      "price":2.50
+      
+       },
+       {
+       "type":"Shrimp",
+      "price":1.75
+       },
+       {
+       "type":"Beef",
+      "price":1.50
+       },
+{
+       "type":"Veggie",
+      "price":1.00
+      
+       },
+
+{
+       "type":"Pork",
+      "price":2.25
        }
+
 
     ]
 }

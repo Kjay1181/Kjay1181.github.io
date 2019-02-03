@@ -7,7 +7,9 @@
         width:250px;
         background-image:url("bananaLumpia.jpg");
         background-size:cover;
-        margin:50px;
+        position:absolute;
+        left:100px;
+        top:100px;
       }
      
       
@@ -21,10 +23,127 @@
       #amount{
         font-size:30px
       }
+      
+      #two{
+        height:250px;
+        width:250px;
+        background-image:url("https://images.media-allrecipes.com/userphotos/560x315/1060398.jpg");
+        background-size:cover;
+       position:absolute;
+       left:800px;
+       top:130px;
+      }
+     
+      
+      #bananaTitleTwo{
+       font-size:25px;
+      }
+     
+      #bananaPriceTwo{
+        font-size:30px
+      }
+      #amountTwo{
+        font-size:30px
+      }
+      #three{
+        height:250px;
+        width:250px;
+        background-image:url("https://mamasrecipesandafew.files.wordpress.com/2013/10/418503_10150616211337055_625669731_n.jpg");
+        background-size:cover;
+       position:absolute;
+       left:500px;
+       top:400px;
+      }
+     
+      
+      #bananaTitleThree{
+       font-size:25px;
+      }
+     
+      #bananaPriceThree{
+        font-size:30px
+      }
+      #amountThree{
+        font-size:30px
+      }
+      
+         #four{
+        height:250px;
+        width:250px;
+        background-image:url("http://2.bp.blogspot.com/-Akrepvwh2as/UmSsFnZUswI/AAAAAAAACUI/Pp-KrfUCXKU/s400/chicken+lumpia.JPG");
+        background-size:cover;
+       position:absolute;
+       left:5px;
+       top:400px;
+      }
+     
+      
+      #bananaTitleFour{
+       font-size:25px;
+      }
+     
+      #bananaPriceFour{
+        font-size:30px
+      }
+      #amountFour{
+        font-size:30px
+      }
+      
+        #five{
+        height:250px;
+        width:250px;
+        background-image:url("https://casaveneracion.com/wp-content/uploads/2010/05/pork-spring-rolls.jpg");
+        background-size:cover;
+       position:absolute;
+       left:250px;
+       top:400px;
+      }
+     
+      
+      #bananaTitleFive{
+       font-size:25px;
+      }
+     
+      #bananaPriceFive{
+        font-size:30px
+      }
+      #amountFive{
+        font-size:30px
+      }
+        #six{
+        height:250px;
+        width:250px;
+        background-image:url("https://i.pinimg.com/originals/14/78/66/147866876016e1e3b392abcaab7a8573.jpg");
+        background-size:cover;
+       position:absolute;
+       left:800px;
+       top:400px;
+      }
+     
+      
+      #bananaTitleSix{
+       font-size:25px;
+      }
+     
+      #bananaPriceSix{
+        font-size:30px
+      }
+      #amountSix{
+        font-size:30px
+      }
+      
+      
+      
+      
+      
+      
       #subtotal{
         background-color:#8AAAE5;
         height:300px;
         width:1000px;
+        position:absolute;
+        left:5px;
+        top:700px;
       }
       #quantity{
         font-size:15px;

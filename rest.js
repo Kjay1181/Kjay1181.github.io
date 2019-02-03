@@ -34,7 +34,7 @@
   
   function nextPage(){
  
-   var x=$.getElementById("userInput").value;//finds the value when button is clicked
+   var x=price;//finds the value when button is clicked
       localStorage.setItem("lumpia",x);// set the value
       location.href="results.html";
       

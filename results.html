@@ -22,7 +22,9 @@
   </div>
   <script>
   var x=localStorage.getItem("lumpia");
-  document.getElementById("list").innerHTML=x;
+  var newText= document.createTextNode(parseFloat(x).toFixed(2));
+ var pTag=document.getElementById("list");
+  pTag.appendChild(newText);
   </script>
   </body>
 </html>

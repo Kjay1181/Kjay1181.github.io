@@ -46,7 +46,7 @@ var lumpia=[];
     
     
       var li= document.createElement('li');//creates a lists
-      var newText=document.createTextNode(price);// gets total and saves it as newtext
+      var newText=document.createTextNode(total);// gets total and saves it as newtext
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);

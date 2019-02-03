@@ -6,7 +6,7 @@ var p3;
 var p4;
 var p5;
 var p6;
-var lumpia=[];
+var lumpia=0;
 
  
  var xmlhttp = new XMLHttpRequest();
@@ -56,7 +56,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-      lumpia.push(price);
+      lumpia+price;
       
   }
     
@@ -70,7 +70,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-       lumpia.push(priceTwo);
+       lumpia+priceTwo;
  }
  function buyItemThree(){
    var user=$.getElementById("userInputThree").value;
@@ -82,7 +82,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-       lumpia.push(priceThree);
+       lumpia+priceThree;
  }
  function buyItemFour(){
    var user=$.getElementById("userInputFour").value;
@@ -94,7 +94,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-       lumpia.push(priceFour);
+      lumpia+priceFour;
  }
  function buyItemFive(){
    var user=$.getElementById("userInputFive").value;
@@ -106,7 +106,7 @@ var lumpia=[];
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
        document.getElementById("userInputFive").value="";
-       lumpia.push(priceFive);
+      lumpia+priceFive;
  }
  function buyItemSix(){
    var user=$.getElementById("userInputSix").value;
@@ -118,7 +118,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-      lumpia.push(priceSix);
+      lumpia+priceSix;
  }
   
   

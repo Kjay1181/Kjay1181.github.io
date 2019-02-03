@@ -64,7 +64,7 @@
    var previous = null;
 var current = null;
     setInterval(function(){
-        jQuery.getJSON("items.json", function(json){
+        document.getJSON("bento.json", function(json){
             current = JSON.stringify(json);
             if (previous && current && previous!==current){
                 location.reload();

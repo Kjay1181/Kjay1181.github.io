@@ -5,7 +5,7 @@
     #box{
       position:absolute
       top:100px;
-      left:450px;
+      left:500px;
       background-color:#ffffff;
       height:500px;
       width:500px;
@@ -18,14 +18,14 @@
   <body bgcolor="#8AAAE5">
     <div id="box">
     <h1>Recipt</h1>
-    <a href="index.html">startover</a>
-    <h1 id="list"></h1>
+    
+    <h1 id="items"></h1>
+  <a href="index.html">startover</a>
   </div>
   <script>
   var x=localStorage.getItem("array");
-  var newText= document.createTextNode(parseFloat(x).toFixed(2));
- var pTag=document.getElementById("list");
-  pTag.appendChild(newText);
+  var y = localStorage.getItem("list");
+ document.getElementById("items").innerHTML=y;
   </script>
   </body>
 </html>

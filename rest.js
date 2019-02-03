@@ -55,7 +55,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-      lumpia.push(total);
+      lumpia.push(price);
   }
     
  function buyItemTwo(){
@@ -68,7 +68,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-       lumpia.push(total);
+       lumpia.push(price);
  }
  function buyItemThree(){
    var user=$.getElementById("userInputThree").value;
@@ -80,7 +80,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-       lumpia.push(total);
+       lumpia.push(price);
  }
  function buyItemFour(){
    var user=$.getElementById("userInputFour").value;
@@ -92,7 +92,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-       lumpia.push(total);
+       lumpia.push(price);
  }
  function buyItemFive(){
    var user=$.getElementById("userInputFive").value;
@@ -104,7 +104,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-       lumpia.push(total);
+       lumpia.push(price);
  }
  function buyItemSix(){
    var user=$.getElementById("userInputSix").value;
@@ -116,11 +116,12 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-      lumpia.push(total);
+      lumpia.push(price);
  }
   function nextPage(){
- var lumpia=[];
+ var done= document.getElementById("recipt").innerHTML;
          localStorage.setItem("array",lumpia);// set the value
+     localStorage.setItem("list",done)
       location.href="results.html";
       
   }

@@ -10,22 +10,26 @@
       height:500px;
       width:500px;
     }
-    #list{
-      font-size:25px;
+    #items{
+      font-size:10px;
+    }
+    #tax{
+      font-size:10px;
     }
     </style>
   </head>
   <body bgcolor="#8AAAE5">
     <div id="box">
     <h1>Recipt</h1>
-    
-    <h1 id="items"></h1>
+    <p id= "tax"></p>
+    <p id="items"></p>
   <a href="index.html">startover</a>
   </div>
   <script>
   var x=localStorage.getItem("array");
   var y = localStorage.getItem("list");
  document.getElementById("items").innerHTML=y;
+ document.getElementById("tax").innerHTML=x;
   </script>
   </body>
 </html>

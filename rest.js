@@ -41,7 +41,7 @@ var lumpia=[];
     var amount= $.getElementById("userInput").value;//gets an integer from the user
     var price= p*amount;// takes integer multiply it by two dollars which is the price
     document.getElementById("userInput").value="";//clears the input box
-    var total= "you bought"+" "+"$"+price+ " of Banana Lumpia";//takes price displays it as you bought_ of bana
+    var total= "you bought"+" "+"$"+price.toFixed(2)+ " of Banana Lumpia";//takes price displays it as you bought_ of bana
     
     
     

@@ -56,7 +56,51 @@ var lumpia=[];
    var user=$.getElementById("userInputTwo").value;
    var price= p2*user;
    document.getElementById("userInputTwo").value="";
-   var total= "you bought"+" "+price.toFixed(2)+ "of chicken Lumpia";
+   var total= "you bought"+" "+price.toFixed(2)+" " +"of chicken Lumpia";
+     var li= document.createElement('li');//creates a lists
+      var newText=document.createTextNode(total);// gets total and saves it as newtext
+    li.appendChild(newText);//puts newtext and total together
+      var olTag=document.getElementById("recipt");//
+      olTag.appendChild(li);
+ }
+ function buyItemThree(){
+   var user=$.getElementById("userInputThree").value;
+   var price= p3*user;
+   document.getElementById("userInputThree").value="";
+   var total= "you bought"+" "+price.toFixed(2)+" " +"of shrimp Lumpia";
+     var li= document.createElement('li');//creates a lists
+      var newText=document.createTextNode(total);// gets total and saves it as newtext
+    li.appendChild(newText);//puts newtext and total together
+      var olTag=document.getElementById("recipt");//
+      olTag.appendChild(li);
+ }
+ function buyItemFour(){
+   var user=$.getElementById("userInputFour").value;
+   var price= p4*user;
+   document.getElementById("userInputFour").value="";
+   var total= "you bought"+" "+price.toFixed(2)+" " +"of Beef Lumpia";
+     var li= document.createElement('li');//creates a lists
+      var newText=document.createTextNode(total);// gets total and saves it as newtext
+    li.appendChild(newText);//puts newtext and total together
+      var olTag=document.getElementById("recipt");//
+      olTag.appendChild(li);
+ }
+ function buyItemFive(){
+   var user=$.getElementById("userInputFive").value;
+   var price= p5*user;
+   document.getElementById("userInputTwo").value="";
+   var total= "you bought"+" "+price.toFixed(2)+" " +"of Veggie Lumpia";
+     var li= document.createElement('li');//creates a lists
+      var newText=document.createTextNode(total);// gets total and saves it as newtext
+    li.appendChild(newText);//puts newtext and total together
+      var olTag=document.getElementById("recipt");//
+      olTag.appendChild(li);
+ }
+ function buyItemSix(){
+   var user=$.getElementById("userInputSix").value;
+   var price= p6*user;
+   document.getElementById("userInputSix").value="";
+   var total= "you bought"+" "+price.toFixed(2)+" " +"of Pork Lumpia";
      var li= document.createElement('li');//creates a lists
       var newText=document.createTextNode(total);// gets total and saves it as newtext
     li.appendChild(newText);//puts newtext and total together

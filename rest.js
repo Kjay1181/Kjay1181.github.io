@@ -18,9 +18,9 @@
    
   
   function buyItem(){
-    var amount= $.getElementById("userInput").value;
-    var price= amount*2.00;
-    var total=$.getElementById("quantity").innerHTML= "you bought"+" "+"$"+price+ " of Banana Lumpia";
+    var amount= $.getElementById("userInput").value;//gets an integer from the user
+    var price= amount*2.00;// takes integer multiply it by two dollars which is the price
+    var total= "you bought"+" "+"$"+price+ " of Banana Lumpia";// takes price displays it as you bought_ of bana
     document.getElementById("userInput").value="";
     //clears the input box
     

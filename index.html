@@ -11,17 +11,27 @@
       <h2 id="amount">Enter amount</h2>
       <input type="text" id="userInput">
        <button onclick="buyItem()">Order</button>
- <p id=quantity>
+
     </div>
     
     <div id="subtotal">
-      <h1>You ordered</h1>
+      <h1> Subtotal</h1>
       <p id="display"></p>
       <ol id="recipt"></ol>
    <button onclick="nextPage()">Check Out</button>
     </div>
- 
-        
+    <script>// this checks the json file every two seconds
+   var previous = null;
+var current = null;
+    setInterval(function(){
+        $.getJSON("items.json", function(json){
+            current = JSON.stringify(json);
+            if (previous && current && previous!==current){
+                location.reload();
+            }
+        });
+    }, 2000);
+ </script>
   <script src="rest.js">
     </script>
   </body>

@@ -1,6 +1,11 @@
  var tax = 1.04712;
  var $= document;
 var p;
+var p2;
+var p3;
+var p4;
+var p5;
+var p6;
 var lumpia=[];
  
  var xmlhttp = new XMLHttpRequest();
@@ -50,6 +55,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
+      lumpia.push(total);
   }
     
  function buyItemTwo(){
@@ -62,6 +68,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
+       lumpia.push(total);
  }
  function buyItemThree(){
    var user=$.getElementById("userInputThree").value;
@@ -73,6 +80,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
+       lumpia.push(total);
  }
  function buyItemFour(){
    var user=$.getElementById("userInputFour").value;
@@ -84,6 +92,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
+       lumpia.push(total);
  }
  function buyItemFive(){
    var user=$.getElementById("userInputFive").value;
@@ -95,6 +104,7 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
+       lumpia.push(total);
  }
  function buyItemSix(){
    var user=$.getElementById("userInputSix").value;
@@ -106,10 +116,11 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
+      lumpia.push(total);
  }
   function nextPage(){
- 
-         localStorage.setItem("lumpia",x);// set the value
+ var lumpia=[];
+         localStorage.setItem("array",lumpia);// set the value
       location.href="results.html";
       
   }

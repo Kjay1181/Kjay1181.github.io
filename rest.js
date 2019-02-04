@@ -6,7 +6,14 @@ var p3;
 var p4;
 var p5;
 var p6;
-var lumpia=0;
+var price=0;
+var priceTwo=0;
+var priceThree=0;
+var priceFour=0;
+var priceFive=0;
+var priceSix=0;
+var lumpia=[];
+
 
  
  var xmlhttp = new XMLHttpRequest();
@@ -50,13 +57,12 @@ var lumpia=0;
     var total= "you bought"+" "+"$"+price.toFixed(2)+ " of Banana Lumpia";//takes price displays it as you bought_ of bana
     
     
-    
       var li= document.createElement('li');//creates a lists
       var newText=document.createTextNode(total);// gets total and saves it as newtext
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-      lumpia+price;
+   lumpia.push(price);
       
   }
     
@@ -70,7 +76,7 @@ var lumpia=0;
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-       lumpia+priceTwo;
+     lumpia.push(priceTwo);
  }
  function buyItemThree(){
    var user=$.getElementById("userInputThree").value;
@@ -82,7 +88,7 @@ var lumpia=0;
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-       lumpia+priceThree;
+       lumpia.push(priceThree);
  }
  function buyItemFour(){
    var user=$.getElementById("userInputFour").value;
@@ -94,7 +100,7 @@ var lumpia=0;
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-      lumpia+priceFour;
+     lumpia.push(priceFour);
  }
  function buyItemFive(){
    var user=$.getElementById("userInputFive").value;
@@ -106,7 +112,7 @@ var lumpia=0;
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
        document.getElementById("userInputFive").value="";
-      lumpia+priceFive;
+      lumpia.push(priceFive);
  }
  function buyItemSix(){
    var user=$.getElementById("userInputSix").value;
@@ -118,7 +124,7 @@ var lumpia=0;
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-      lumpia+priceSix;
+      lumpia.push(priceSix);
  }
   
   

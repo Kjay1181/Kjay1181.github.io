@@ -2,12 +2,13 @@
   "lumpia":[
       {
       "type":"Banana ",
-      "price":2.10
+      "price":2.15
+      
 
        },
     {
       "type":"Chicken",
-      "price":2.50
+      "price":2.55
       
        },
        {
@@ -16,11 +17,11 @@
        },
        {
        "type":"Beef",
-      "price":1.50
+      "price":1.55
        },
 {
        "type":"Veggie",
-      "price":1.00
+      "price":1.22
       
        },
 

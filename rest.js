@@ -52,7 +52,7 @@ var lumpia=[];
   
   function buyItem(){
     var amount= $.getElementById("userInput").value;//gets an integer from the user
-    var price= p*amount;// takes integer multiply it by two dollars which is the price
+    var price= p*amount*tax;// takes integer multiply it by two dollars which is the price
     document.getElementById("userInput").value="";//clears the input box
     var total= "you bought"+" "+"$"+price.toFixed(2)+ " of Banana Lumpia";//takes price displays it as you bought_ of bana
     
@@ -62,13 +62,13 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-   lumpia.push(price);
+
       
   }
     
  function buyItemTwo(){
    var user=$.getElementById("userInputTwo").value;
-   var priceTwo= p2*user;
+   var priceTwo= p2*user*tax;
    document.getElementById("userInputTwo").value="";
    var total= "you bought"+" "+priceTwo.toFixed(2)+" " +"of chicken Lumpia";
      var li= document.createElement('li');//creates a lists
@@ -76,11 +76,11 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-     lumpia.push(priceTwo);
+     
  }
  function buyItemThree(){
    var user=$.getElementById("userInputThree").value;
-   var priceThree= p3*user;
+   var priceThree= p3*user*tax;
    document.getElementById("userInputThree").value="";
    var total= "you bought"+" "+priceThree.toFixed(2)+" " +"of shrimp Lumpia";
      var li= document.createElement('li');//creates a lists
@@ -88,11 +88,11 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-       lumpia.push(priceThree);
+
  }
  function buyItemFour(){
    var user=$.getElementById("userInputFour").value;
-   var priceFour= p4*user;
+   var priceFour= p4*user*tax;
    document.getElementById("userInputFour").value="";
    var total= "you bought"+" "+priceFour.toFixed(2)+" " +"of Beef Lumpia";
      var li= document.createElement('li');//creates a lists
@@ -100,11 +100,11 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-     lumpia.push(priceFour);
+
  }
  function buyItemFive(){
    var user=$.getElementById("userInputFive").value;
-   var priceFive= p5*user;
+   var priceFive= p5*user*tax;
    var total= "you bought"+" "+priceFive.toFixed(2)+" " +"of Veggie Lumpia";
      var li= document.createElement('li');//creates a lists
       var newText=document.createTextNode(total);// gets total and saves it as newtext
@@ -112,11 +112,10 @@ var lumpia=[];
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
        document.getElementById("userInputFive").value="";
-      lumpia.push(priceFive);
  }
  function buyItemSix(){
    var user=$.getElementById("userInputSix").value;
-   var priceSix= p6*user;
+   var priceSix= p6*user*tax;
    document.getElementById("userInputSix").value="";
    var total= "you bought"+" "+priceSix.toFixed(2)+" " +"of Pork Lumpia";
      var li= document.createElement('li');//creates a lists
@@ -124,13 +123,11 @@ var lumpia=[];
     li.appendChild(newText);//puts newtext and total together
       var olTag=document.getElementById("recipt");//
       olTag.appendChild(li);
-      lumpia.push(priceSix);
  }
   
   
   function nextPage(){
  var done= document.getElementById("recipt").innerHTML;
-         localStorage.setItem("array",lumpia);// set the value
      localStorage.setItem("list",done)
       location.href="results.html";
       

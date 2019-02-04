@@ -61,16 +61,7 @@
    <button onclick="nextPage()">Check Out</button>
     </div>
     <script>// this checks the json file every two seconds
-  var previous = null;
-var current = null;
-    setInterval(function(){
-        document.getJSON("bento.json", function(json){
-            current = JSON.stringify(json);
-            if (previous && current && previous!==current){
-                location.reload();
-            }
-        });
-    }, 2000);
+ 
  </script>
   <script src="rest.js">
     </script>

@@ -8,8 +8,8 @@
   <script>
     var w= window.innerWidth;
     var h = window.innerHeight;
-    var ball= new ball();//creates a global object
-    var ballTwo= new ballTwo();// creates thr enemy global objrct
+    var rat= new ball();//creates a global object
+    var cheese= new ballTwo();// creates thr enemy global objrct
     var d;// global variable that the distance is saved
     let img;
     function preload(){
@@ -23,16 +23,16 @@
     
     function draw(){
       background(255);// makes the background white
-   ball.show();//calls the color of object one and size
-  ball.move();//calls the function move the ball
-ballTwo.shows();//calls the color of object two and size
-ballTwo.moves();//calls the function move the ball
-ballTwo.tag();// calls the function thats deals with the distance
+   rat.show();//calls the color of object one and size
+  rat.move();//calls the function move the ball
+cheese.shows();//calls the color of object two and size
+cheese.moves();//calls the function move the ball
+cheese.tag();// calls the function thats deals with the distance
     }
          
     
     
-function ball(){// this is a object
+function rat(){// this is a object
       this.x =100;
       this.y=100;
       this.show = function(){
@@ -55,7 +55,7 @@ function ball(){// this is a object
     }
   
 }
- function ballTwo(){
+ function cheese(){
       this.x = 250;
       this.y = 100;
       this.shows = function(){//step one

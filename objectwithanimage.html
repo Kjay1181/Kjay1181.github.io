@@ -1,0 +1,107 @@
+
+<html>
+  <head>
+  <script src="p5.min.js"></script>
+  </head>
+<body>
+  <h1 id="coordinates"></h1>
+  <script>
+    var w= window.innerWidth;
+    var h = window.innerHeight;
+    var ball= new ball();//creates a global object
+    var ballTwo= new ballTwo();// creates thr enemy global objrct
+    var d;// global variable that the distance is saved
+    let img;
+    let cheese;
+    function preload(){
+      img= loadImage("rat.png");// loads the image and saves it as img
+    cheese= loadImage("cheese.jpg");
+      
+    }
+    function setup(){
+      createCanvas(w,h);
+      img.loadPixels();//displays image to page
+    cheese.loadPixels();
+      
+    }
+    
+    function draw(){
+      background(255);// makes the background white
+   ball.show();//calls the color of object one and size
+  ball.move();//calls the function move the ball
+ballTwo.shows();//calls the color of object two and size
+ballTwo.moves();//calls the function move the ball
+ballTwo.tag();// calls the function thats deals with the distance
+    }
+         
+    
+    
+function ball(){// this is a object
+      this.x =100;
+      this.y=100;
+      this.show = function(){
+       image(img,this.x,this.y,100,100);
+        
+      }
+    this.move= function(){
+      if(keyIsDown(65) && (this.x > 15)){//when a button is pressed moves left
+        this.x-=10;
+      }
+    if (keyIsDown(68)&& (this.x< w-40)){//when d button is pressed moves right
+      this.x+=10;
+    }
+       if (keyIsDown(87)&& (this.y> 0)){//when w button is pressed moves up
+    this.y-=10;
+   }
+   if (keyIsDown(83)&& (this.y< h-40)){
+     this.y+=10;//when s button is pressed moves down
+   }
+    }
+  
+}
+ function ballTwo(){
+      this.x = 250;
+      this.y = 100;
+      this.shows = function(){//step one
+        image(cheese,this.x,this.y,100,100);
+        strokeWeight(2);
+        ellipse(this.x, this.y, 50,50);
+        img.resize(50, 100);
+      }
+      this.moves = function(){
+        if(keyIsDown("74") && this.x>50){//keyA
+          this.x -= 10;
+        }
+        if(keyIsDown("76")&& this.x<w-50){
+          this.x += 10;
+        }
+        if(keyIsDown("73")&& (this.y>50)){
+          this.y -= 10;
+        }
+        if(keyIsDown("75")&&(this.y<h-50)){
+          this.y += 10;
+        }
+      }
+     this.tag = function(){
+        d = dist(this.x, this.y, ball.x, ball.y);// gets the distance between the two objects saves it as d
+        document.getElementById("coordinates").innerHTML = d;// displays the distances
+        if(d <= 10){// if the distance gets less than 50 pixels or less then the draw function stops.
+          noLoop();//stops the draw function
+          window.alert("you lose");// displays you lose
+        }
+      }
+    }
+    function speedpowerup(){
+      this.x=random(256);
+      this.y=random(256);
+      this.shows= function(){
+      fill(color("orange"));
+        strokeWeight(2);
+        ellipse(this.x,this.y,25,25);
+        
+        
+      }
+    }
+</script>
+</body>
+</html>

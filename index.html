@@ -1,3 +1,4 @@
+
 <html>
   <head>
     <title>KJ's cool game</title>
@@ -78,7 +79,7 @@ function rat(){// this is a object
         }
       }
      this.tag = function(){
-        d = dist(this.x, this.y, ball.x, ball.y);// gets the distance between the two objects saves it as d
+        d = dist(this.x, this.y, rat.x, rat.y);// gets the distance between the two objects saves it as d
         document.getElementById("coordinates").innerHTML = d;// displays the distances
         if(d <= 50){// if the distance gets less than 50 pixels or less then the draw function stops.
           noLoop();//stops the draw function

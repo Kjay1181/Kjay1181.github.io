@@ -13,17 +13,17 @@
     var ballThree= new ballThree();// this is the mousetraps
     var d;// global variable that the distance is saved
     let img;
-    let imgtwo;
+    let imgTwo;
     function preload(){
       img= loadImage("rat.png");// loads the image and saves it as img
-      imgtwo=loadImage("cheese.jpg");
+      imgTwo=loadImage("cheese.jpg");
     }
     function setup(){
       createCanvas(w,h);
       img.loadPixels();//Loads the pixels data for this image into the [pixels] attribute
       img.resize(100, 100);//resize the image to be 100pixels by 100pixels
-      imgtwo.loadPixels(w,h);//Loads the pixels data for this image into the [pixels] attribute.
-      cheeseimg.resize(100,100);
+      imgTwo.loadPixels(w,h);//Loads the pixels data for this image into the [pixels] attribute.
+      imgTwo.resize(100,100);
     }
     
     function draw(){
@@ -65,7 +65,7 @@ function ball(){// this is a object
       this.x = 250;
       this.y = 100;
       this.shows = function(){//step one
-       image(imgtwo,this.x,this.y);
+       image(imgTwo,this.x,this.y);
        
       }
       this.moves = function(){

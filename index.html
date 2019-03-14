@@ -15,8 +15,6 @@
     var ballThree= new ballThree();// this is the mousetraps
     var d;// global variable that the distance is saved
     let img;
-    var posX=w/2;
-    var posY=h/2;
     function preload(){
       img= loadImage("rat.png");// loads the image and saves it as img
     }
@@ -93,8 +91,11 @@ function ball(){// this is a object
       }
     }
     function ballThree(){
-       fill(color("orange"));
-      ellipse(posX,posY,random(50),random(50));
+       this.x = 250;
+      this.y = 100;
+       this.shows= function(){
+         fill(color("orange"));
+      ellipse(this.x,this.y,random(50),random(50));
       }
     }
 </script>

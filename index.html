@@ -1,5 +1,3 @@
-
-
 <html>
   <head>
     <title>rat game</title>
@@ -15,13 +13,17 @@
     var ballThree= new ballThree();// this is the mousetraps
     var d;// global variable that the distance is saved
     let img;
+    let cheeseimg;
     function preload(){
       img= loadImage("rat.png");// loads the image and saves it as img
+      cheeseimg=loadImage("cheese.jpg");
     }
     function setup(){
       createCanvas(w,h);
-      img.loadPixels();
-      img.resize(100, 100);
+      img.loadPixels();//Loads the pixels data for this image into the [pixels] attribute
+      img.resize(100, 100);//resize the image to be 100pixels by 100pixels
+      cheeseimg.loadPixels(w,h);//Loads the pixels data for this image into the [pixels] attribute.
+      cheeseimg.resize(100,100);
     }
     
     function draw(){
@@ -63,9 +65,8 @@ function ball(){// this is a object
       this.x = 250;
       this.y = 100;
       this.shows = function(){//step one
-        fill(color('blue'));
-        strokeWeight(2);
-        ellipse(this.x, this.y, 50,50);
+       image(cheeseimg,this.x,this.y);
+       
       }
       this.moves = function(){
         if(keyIsDown("74") && this.x>50){//keyA
@@ -91,8 +92,8 @@ function ball(){// this is a object
       }
     }
     function ballThree(){
-       this.x = 250;
-      this.y = 100;
+       this.x = random(256);
+      this.y = random(256);
        this.shows= function(){
          fill(color("orange"));
       ellipse(this.x,this.y,20,20);

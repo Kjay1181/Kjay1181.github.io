@@ -1,4 +1,5 @@
 
+
 <html>
   <head>
     <title>KJ's cool game</title>
@@ -9,8 +10,8 @@
   <script>
     var w= window.innerWidth;
     var h = window.innerHeight;
-    var rat= new ball();//creates a global object
-    var cheese= new ballTwo();// creates thr enemy global objrct
+    var ball= new ball();//creates a global object
+    var ballTwo= new ballTwo();// creates thr enemy global objrct
     var d;// global variable that the distance is saved
     let img;
     function preload(){
@@ -24,16 +25,16 @@
     
     function draw(){
       background(255);// makes the background white
-   rat.show();//calls the color of object one and size
-  rat.move();//calls the function move the ball
-cheese.shows();//calls the color of object two and size
-cheese.moves();//calls the function move the ball
-cheese.tag();// calls the function thats deals with the distance
+   ball.show();//calls the color of object one and size
+  ball.move();//calls the function move the ball
+ballTwo.shows();//calls the color of object two and size
+ballTwo.moves();//calls the function move the ball
+ballTwo.tag();// calls the function thats deals with the distance
     }
          
     
     
-function rat(){// this is a object
+function ball(){// this is a object
       this.x =100;
       this.y=100;
       this.show = function(){
@@ -56,7 +57,7 @@ function rat(){// this is a object
     }
   
 }
- function cheese(){
+ function ballTwo(){
       this.x = 250;
       this.y = 100;
       this.shows = function(){//step one
@@ -79,9 +80,9 @@ function rat(){// this is a object
         }
       }
      this.tag = function(){
-        d = dist(this.x, this.y, rat.x, rat.y);// gets the distance between the two objects saves it as d
+        d = dist(this.x, this.y, ball.x, ball.y);// gets the distance between the two objects saves it as d
         document.getElementById("coordinates").innerHTML = d;// displays the distances
-        if(d <= 50){// if the distance gets less than 50 pixels or less then the draw function stops.
+        if(d < 50){// if the distance gets less than 50 pixels or less then the draw function stops.
           noLoop();//stops the draw function
           window.alert("you lose");// displays you lose
         }

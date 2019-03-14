@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Rat trap</title>
+    <title>KJ's cool game</title>
   <script src="https://github.com/processing/p5.js/releases/download/0.7.3/p5.min.js"></script>
   </head>
 <body>
@@ -12,9 +12,11 @@
     var h = window.innerHeight;
     var ball= new ball();//creates a global object
     var ballTwo= new ballTwo();// creates thr enemy global object
-    var mouseTrap= new ballThree();// this is the mousetraps
+    var ballThree= new ballThree();// this is the mousetraps
     var d;// global variable that the distance is saved
     let img;
+    var posX=w/2;
+    var posY=h/2;
     function preload(){
       img= loadImage("rat.png");// loads the image and saves it as img
     }
@@ -31,7 +33,7 @@
 ballTwo.shows();//calls the color of object two and size
 ballTwo.moves();//calls the function move the ball
 ballTwo.tag();// calls the function thats deals with the distance
-mouseTrap.shows();
+ballThree.shows();
     }
          
     
@@ -90,12 +92,9 @@ function ball(){// this is a object
         }
       }
     }
-    function mouseTrap(){
-      this.x=random(256);
-      this.y=random(256);
-      this.shows=function(){
+    function ballThree(){
        fill(color("orange"));
-       ellipse(random(50,w-50),random(50,h-50),50,50);
+      ellipse(posX,posY,random(50),random(50));
       }
     }
 </script>

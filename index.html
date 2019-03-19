@@ -15,11 +15,13 @@
     var ballThree= new ballThree();// this is the mousetraps
     var d;// global variable that the distance is saved
     var dTwo;
-    let img;
-    let imgTwo;
+    let img;//the rat
+    let imgTwo;//the cheese
+    let imgThree;//the lightning bolt
     function preload(){
       img= loadImage("biggie.png");// loads the image and saves it as img
       imgTwo=loadImage("cheeseblock.png");
+      imgThree=loadImage("lightning.png");
     }
     function setup(){
       createCanvas(w,h);
@@ -27,7 +29,8 @@
       img.resize(100, 100);//resize the image to be 100pixels by 100pixels
       imgTwo.loadPixels(w,h);//Loads the pixels data for this image into the [pixels] attribute.
       imgTwo.resize(100,100);
-    
+     imgThree.loadPixels(w,h);
+      imgThree.resize(50,50);
     }
     
     function draw(){
@@ -92,16 +95,16 @@ function ball(){// this is a object
 
         if(d < 50){// if the distance gets less than 50 pixels or less then the draw function stops.
           noLoop();//stops the draw function
-          window.alert("you lose");// displays you lose
+          window.alert("player one wins");// displays you lose
         }
       }
     }
     function ballThree(){
        this.x = 250;
       this.y = 100;
+      
        this.shows= function(){
-         fill(color("orange"));
-      ellipse(this.x,this.y,20,20);
+     image(imgThree,this.x,this.y);
       }
       this.powerup=function(){
         dTwo= dist(this.x,this.y,ballTwo.x,ballTwo.y);

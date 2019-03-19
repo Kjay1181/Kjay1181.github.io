@@ -13,11 +13,12 @@
     var ballTwo= new ballTwo();// creates thr enemy global object
     var ballThree= new ballThree();// this is the mousetraps
     var d;// global variable that the distance is saved
+    var dTwo;
     let img;
     let imgTwo;
     function preload(){
-      img= loadImage("rat.png");// loads the image and saves it as img
-      imgTwo=loadImage("cheese.png");
+      img= loadImage("biggie.png");// loads the image and saves it as img
+      imgTwo=loadImage("cheeseblock.png");
     }
     function setup(){
       createCanvas(w,h);
@@ -98,6 +99,13 @@ function ball(){// this is a object
        this.shows= function(){
          fill(color("orange"));
       ellipse(this.x,this.y,20,20);
+      }
+      this.powerup=function(){
+        dTwo= distant(this.x,this.y,ball.x,ball.y);
+        if (dTwo<50){
+          this.x=random(256);
+          this.y=random(256);
+        }
       }
     }
 </script>

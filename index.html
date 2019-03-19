@@ -15,7 +15,7 @@
     var ballThree= new ballThree();// this is the mousetraps
     var d;// global variable that the distance is saved
     var dTwo;//distance of the cheese
-    let song;
+    let sound;
     let img;//the rat
     let imgTwo;//the cheese
     let imgThree;//the lightning bolt
@@ -24,7 +24,7 @@
       imgTwo=loadImage("cheeseblock.png");
       imgThree=loadImage("lightning.png");
   soundFormats( 'ogg','mp3');
-  song= loadSound("youlose.mp3");
+  sound= loadSound("youlose.mp3");
       
     }
     function setup(){
@@ -99,8 +99,8 @@ function ball(){// this is a object
 
         if(d < 50){// if the distance gets less than 50 pixels or less then the draw function stops.
           noLoop();//stops the draw function
-           song.setVolume(0.1);
-           song.play();
+           sound.setVolume(0.1);
+           sound.play();
           window.alert("player two lose");// displays you lose
         }
       }

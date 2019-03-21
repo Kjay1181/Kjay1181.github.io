@@ -24,7 +24,7 @@
       imgTwo=loadImage("cheeseblock.png");
       imgThree=loadImage("lightning.png");
   soundFormats( 'ogg','mp3');
-  sound= loadSound("youlose.mp3");
+  mySound= loadSound("youlose.mp3");
       
     }
     function setup(){
@@ -98,10 +98,11 @@ function ball(){// this is a object
         d = dist(this.x, this.y, ball.x, ball.y);// gets the distance between the two objects saves it as d
 
         if(d < 50){// if the distance gets less than 50 pixels or less then the draw function stops.
-          noLoop();//stops the draw function
-           sound.setVolume(0.1);
-           sound.play();
-          window.alert("player two lose");// displays you lose
+         /stops the draw function
+           mySound.setVolume(0.1);
+           mySound.play();
+          window.alert("player two lose"); // displays you lose
+          noLoop();
         }
       }
     }

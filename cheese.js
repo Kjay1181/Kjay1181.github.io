@@ -16,5 +16,17 @@ function cheese(){
    }
      
    }
+ this.range= function(){
+   if (this.x===0 || this.y===h+10){
+     this.x=Math.floor(Math.random()*w);
+  this.y=Math.floor(Math.random()*h);
+   
+   }
+   if(this.x===w+100 ||this.y===0){
+     this.x=Math.floor(Math.random()*w);
+  this.y=Math.floor(Math.random()*h);
+   }
  }
+  
+}
 

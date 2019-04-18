@@ -1,6 +1,6 @@
 function cheese(){
   this.x=Math.floor(Math.random()*w);
-  this.y=100;
+  this.y=Math.floor(Math.random()*h);
   this.width=50;
   this.height=50;
   this.count=0;

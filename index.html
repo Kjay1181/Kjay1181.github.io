@@ -62,7 +62,7 @@ color:white;
              imgTwo= loadImage("tamatoa.png");
              imgThree= loadImage("heart.jpeg");
              imgFour= loadImage("fireball.png");
-             imgFive= loadImage("fightingscene.jpeg");
+             imgFive= loadImage("fightingscene.jpg");
             }
             function setup(){
         createCanvas(w,h);
@@ -76,7 +76,7 @@ color:white;
         imgFive.loadPixels();
       }
       function draw(){
-      background(imgFive,1);
+      background(imgFive);
         jumper.show();
         jumper.update();
         jumper.move();

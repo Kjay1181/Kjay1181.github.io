@@ -10,8 +10,8 @@ function barrier(){
  
 
   this.show=function(){
-    fill(color("orange"));
-    rect(this.x,this.y,this.width,this.height);
+   
+    image(imgFour,this.x,this.y,this.width,this.height);
   }
 
   this.update=function(){//makes the ball fall down

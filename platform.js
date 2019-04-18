@@ -5,8 +5,8 @@ function platform(){
   this.width=100;
   this.height=100;
   this.show=function(){
-    fill(color("green"));
-    rect(this.x,this.y,this.width,this.height);
+    
+    image(imgTwo,this.x,this.y,this.width,this.height);
   }
   this.update=function(){//makes the ball fall down
  this.x= this.x+speed;

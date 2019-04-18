@@ -5,8 +5,8 @@ function cheese(){
   this.height=50;
   this.count=0;
   this.show=function(){
-    fill(color("green"));
-    ellipse(this.x,this.y,this.width,this.height);
+    
+    image(imgThree,this.x,this.y,this.width,this.height);
   }
  this.score=function(){
    d= dist(this.x, this.y, jumper.x, jumper.y);

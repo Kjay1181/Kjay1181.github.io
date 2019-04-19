@@ -60,9 +60,10 @@ color:white;
       var water;
       var backgroundsound;
        var loss;
+       
 
             function preload(){
-             user= loadImage("moana.png");
+             user= loadImage("hawk.jpg");
              crab= loadImage("tamatoa.png");
              heart= loadImage("tefiti.jpg");
              fire= loadImage("fireball.png");
@@ -99,7 +100,7 @@ color:white;
        cheese.show();
        cheese.score();
        cheese.range();
-       land.show();
+      
        
         hit = collideRectCircle(//user and the fire ball
        barrier.x,
@@ -130,14 +131,7 @@ if (hit=== true){
           
         }
   
-        hitTwo=collideRectCircle(land.x,land.y,land.width,land.height,jumper.x,jumper.y,50);// collision between user and  the ground
-        if (hitTwo===true){
-          jumper.up();
-        }
-        hitThree=collideRectRect(land.x,land.y,land.width,land.height,platform.x,platform.y,platform.width, platform.height);//collision between crab and the ground
-        if (hit===true){
-          this.y= Math.floor(Math.random()*h);
-        }
+       
         document.getElementById("score").innerHTML="Score="+" "+cheese.count;
  function reload(){
    location.href="gravity.html";

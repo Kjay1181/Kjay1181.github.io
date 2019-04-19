@@ -18,6 +18,9 @@
   <script>
      var w = window.innerWidth;
     var h = window.innerHeight;
+    var a= "moves left";
+    var d="moves right";
+    var spacebar="jumps"
     var bgimage;
 function preload(){
    bgimage= loadImage("tekas.jpg");
@@ -30,6 +33,10 @@ function setup(){
 }
     function draw(){
     background("bgimage");
+    fill(color("white"));
+    text(a,0,10);
+    text(d,0,20);
+    text(spacebar,0,30);
    
     }
      function keyPressed() {

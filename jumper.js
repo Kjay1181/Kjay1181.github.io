@@ -8,7 +8,7 @@ function jumper(){
   this.height=100;
       this.show=function(){
       
-      image(img,this.x,this.y,this.width,this.height);
+      image(user,this.x,this.y,this.width,this.height);
       }
       this.up=function(){
         this.velocity+=this.lift;//when I go up im gonna impose the gravity by negative ten

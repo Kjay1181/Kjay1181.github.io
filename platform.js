@@ -6,7 +6,7 @@ function platform(){
   this.height=100;
   this.show=function(){
     
-    image(imgTwo,this.x,this.y,this.width,this.height);
+    image(crab,this.x,this.y,this.width,this.height);
   }
   this.update=function(){//makes the ball fall down
  this.x= this.x+speed;

@@ -11,7 +11,7 @@ function barrier(){
 
   this.show=function(){
    
-    image(imgFour,this.x,this.y,this.width,this.height);
+    image(fire,this.x,this.y,this.width,this.height);
   }
 
   this.update=function(){//makes the ball fall down

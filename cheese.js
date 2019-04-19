@@ -6,7 +6,7 @@ function cheese(){
   this.count=0;
   this.show=function(){
     
-    image(imgThree,this.x,this.y,this.width,this.height);
+    image(heart,this.x,this.y,this.width,this.height);
   }
  this.score=function(){
    d= dist(this.x, this.y, jumper.x, jumper.y);

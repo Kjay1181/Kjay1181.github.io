@@ -18,23 +18,19 @@
   <script>
      var w = window.innerWidth;
     var h = window.innerHeight;
-    var bgimg;
+    var bgimage;
 function preload(){
-   bgimg= loadImage("tekas.jpg");
-             bgimg.resize(w,h);
+   bgimage= loadImage("tekas.jpg");
+             bgimage.resize(w,h);
 }
 function setup(){
       createCanvas(w,h);
-      bgimg=loadPixels();
+      bgimage=loadPixels();
       
 }
     function draw(){
-    background("bgimg");
-    textSize(45);
-    text("Use a to move left");
-     text("Use d to move right");
-       text("Use spacebar to jump");
-       text("Press s to start");
+    background("bgimage");
+   
     }
      function keyPressed() {
       if (keyCode===83){

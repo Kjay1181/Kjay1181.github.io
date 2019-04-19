@@ -79,6 +79,7 @@ color:white;
         imgFive.loadPixels();
         loss.setVolume(1);
         loss.play();
+        loss.loop();
       }
       function draw(){
       background(imgFive);
@@ -132,7 +133,7 @@ if (hit=== true){
         }
         document.getElementById("score").innerHTML="Score="+" "+cheese.count;
  function reload(){
-   location.href="index.html";
+   location.href="gravity.html";
    
  }
       }

@@ -1,33 +1,47 @@
 <html>
   <head>
-      <style>
-      body{
-         background-image:url("tekas.jpg");
-      background-size:cover;
+<script src ="p5.min.js"></script>
+ <style>
       }
 #title{
-    color:orangered;
+    color:green;
     font-size:50px;
 
 }
-#instruction{
-  color:orangered;
-    font-size:50px;
-}
+
       </style>
   </head>
 <body>
   <h1 id="title">Help Maui get his fish hook to stop Te Ka's fireball</h1>
-  <h2 id= "instruction">Use A to move left
-    D to move right
-    spacebar to jump
-  </h2>
-    <button onclick="storageTest()">Next</button>
   
+
   <script>
-    function storageTest(){
-location.href="gravity.html";
+     var w = window.innerWidth;
+    var h = window.innerHeight;
+    var bgimg;
+function preload(){
+   bgimag= loadImg("tekas.jpg");
+             bgimg.resize(w,h);
+}
+function setup(){
+      createCanvas(w,h);
+      bgimg=loadPixels();
+      
+}
+    function draw(){
+    background("bgimg");
+    textSize(45);
+    fill(color("blue"));
+    text("Use a to move left");
+     text("Use d to move right");
+       text("Use spacebar to jump");
+       text("Press s to start");
     }
+     function keyPressed() {
+      if (keyCode===83){
+      location.href="gravity.html";
+    }
+     }
     </script>
 </body>
 </html>

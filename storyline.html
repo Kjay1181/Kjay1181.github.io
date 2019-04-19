@@ -8,13 +8,23 @@
     font-size:50px;
 
 }
+#instructions{
+    color:green;
+    font-size:50px;
+
+}
+#start{
+    color:green;
+    font-size:50px;
+
+}
 
       </style>
   </head>
 <body>
   <h1 id="title">Help Maui get his fish hook to stop Te Ka's fireball</h1>
-  
-
+  <h2 id="instructions">Use a to move left, To move right use d, To jump use the space bar</h2>
+<h3 id="start">To start press S</h3>
   <script>
      var w = window.innerWidth;
     var h = window.innerHeight;
@@ -33,10 +43,6 @@ function setup(){
 }
     function draw(){
     background("bgimage");
-    fill(color("white"));
-    text(a,0,10);
-    text(d,0,20);
-    text(spacebar,0,30);
    
     }
      function keyPressed() {

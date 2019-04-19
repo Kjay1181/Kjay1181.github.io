@@ -4,8 +4,8 @@ function jumper(){
      this.gravity=0.5;// the force of gravity
      this.lift=-10;//opposing force of gravity
      this.velocity=0;// speed of gravity
-     this.width=50;
-  this.height=50;
+     this.width=100;
+  this.height=100;
       this.show=function(){
       
       image(img,this.x,this.y,this.width,this.height);

@@ -57,7 +57,7 @@ color:white;
       var imgThree;
       var imgFour;
       var imgFive;
-      var loss;
+      var backgroundsound;
             function preload(){
              img= loadImage("moana.png");
              imgTwo= loadImage("tamatoa.png");
@@ -65,7 +65,7 @@ color:white;
              imgFour= loadImage("fireball.png");
              imgFive= loadImage("fightingscene.jpg");
              imgFive.resize(w,h);
-             loss=loadSound("knowyourself.mp3");
+             backgroundsound=loadSound("knowyourself.mp3");
             }
             function setup(){
         createCanvas(w,h);
@@ -77,9 +77,9 @@ color:white;
     
         imgFour.loadPixels();
         imgFive.loadPixels();
-        loss.setVolume(1);
-        loss.play();
-        loss.loop();
+        backgroundsound.setVolume(1);
+        backgroundsound.play();
+        backgroundsound.loop();
       }
       function draw(){
       background(imgFive);

@@ -1,6 +1,6 @@
 function land(){
     this.x=500;
-    this.y=900;
+    this.y=500;
     this.height=h;
     this.width=w;
     this.show=function(){

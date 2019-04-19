@@ -28,9 +28,6 @@
   <script>
      var w = window.innerWidth;
     var h = window.innerHeight;
-    var a= "moves left";
-    var d="moves right";
-    var spacebar="jumps"
     var bgimage;
 function preload(){
    bgimage= loadImage("tekas.jpg");
@@ -38,7 +35,7 @@ function preload(){
 }
 function setup(){
       createCanvas(w,h);
-      bgimage=loadPixels();
+      bgimage.loadPixels();
       
 }
     function draw(){

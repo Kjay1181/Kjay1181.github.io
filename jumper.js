@@ -11,7 +11,7 @@ function jumper(){
       image(user,this.x,this.y,this.width,this.height);
       }
       this.up=function(){
-        this.velocity+=this.lift;//when I go up im gonna impose the gravity by negative ten
+        this.velocity+=this.gravity;//when I go up im gonna impose the gravity by negative ten
         
       }
         this.update=function(){//makes the ball fall down

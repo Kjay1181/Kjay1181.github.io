@@ -54,7 +54,7 @@
         moana.show();
         moana.move();
         crab.show();
-        crab.reverse();
+        crab.update();
         hook.show();
         hook.score();
       }
@@ -98,23 +98,12 @@ function crab(){
     image(animal,this.x,this.y,this.width,this.height);
   }
   this.update=function(){//makes the ball fall down
- this.x= this.x+speed;
+ 
  if (this.x > w){
   
-  speed=-speed;
-  
+window.alert("off screen")
  }
   
-    
-  }
-this.reverse= function(){
-  if(this.x<0){
-
-speed=7;
-  }
-
-}
-
 }
   //hitOne=collideRectCircle(crab.x,crab.y,crab.width/2,crab.height/2,moana.x,moana.y,150);// collision betweeen the user and the crab
    //     if (hitOne=== true){

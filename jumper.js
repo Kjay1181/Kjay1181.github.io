@@ -9,8 +9,7 @@ function jumper(){
       this.show=function(){
       
       image(user,this.x,this.y,this.width,this.height);
-      if(this.y>h){
-        this.gravity= 0;
+     
       }
         
       }

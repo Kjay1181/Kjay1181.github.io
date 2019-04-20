@@ -24,7 +24,8 @@
       var moana= new moana();
       var crab= new crab();
       var hook= new hook();
-       var hitOne=false;// collision betweeen the user and the crab
+       var hitOne=false;
+       var d;// collision betweeen the user and the crab
       
       function preload(){
         bgimage=loadImage("crablair.jpg");
@@ -143,14 +144,16 @@ function hook(){
  this.score=function(){
    d= dist(this.x, this.y, moana.x, moana.y);
    if (d<50){
-   location.href"gravity.html";
+  nextpage();
    }
      
    }
  
   
 }
-
+function nextpage(){
+   location.href"gravity.html";
+}
 
 
 </script>

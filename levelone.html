@@ -11,6 +11,12 @@
    padding:0;
    margin:0;
     }
+     #youlose{
+   position: absolute;
+  left: 500px;
+  top: 300px;
+color:white;
+ }
   </style>
   </head>
   <body>
@@ -28,7 +34,7 @@
       var hook= new hook();
        //var hitOne=false;
        var d;// collision betweeen the user and the crab
-      
+      var dTwo;
       function preload(){
         bgimage=loadImage("crablair.jpg");
         bgimage.resize(w,h);
@@ -97,6 +103,7 @@ function crab(){
  this.y= Math.floor(Math.random()*h);// random point on the y axis
   this.width=100;
   this.height=100;
+  dTwo= dist(this.x, this.y, moana.x,moana.y);
   this.show=function(){
     
     image(animal,this.x,this.y,this.width,this.height);
@@ -112,21 +119,17 @@ speed=-3;
  }
 this.x= this.x+speed;
 }
+
+  if (d<50){
+     noLoop();
+         document.getElementById("youlose").innerHTML="Try again?";
+        button= createButton("restart");
+        button.position(500,500);
+        button.mousePressed(reload);
+        loss.play();
+  }
 }
-  //hitOne=collideRectCircle(crab.x,crab.y,crab.width/2,crab.height/2,moana.x,moana.y,150);// collision betweeen the user and the crab
-   //     if (hitOne=== true){
-    //      noLoop();
-    //     document.getElementById("youlose").innerHTML="Try Again?";
-    //    button= createButton("restart");
-    //    button.position(500,500);
-//button.mousePressed(reload);
-        //loss.play();
-        
-          
-       // }
-       // function restart(){
-  //location.href="levelone.html";
-//}
+ 
 function hook(){
   this.x=Math.floor(Math.random()*w);
   this.y=Math.floor(Math.random()*h);
@@ -150,8 +153,13 @@ function hook(){
 function nextpage(){
    location.href="gravity.html";
 }
+ function reload(){
+   location.href="levelone.html";
+   
+ }
 
 
 </script>
+<h1 id= "youlose"></h1>
   </body>
 </html>

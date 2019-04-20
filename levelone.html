@@ -127,6 +127,9 @@ speed=7;
         
           
         }
+        function restart(){
+  location.href="levelone.html";
+}
 function hook(){
   this.x=Math.floor(Math.random()*w);
   this.y=Math.floor(Math.random()*h);
@@ -140,7 +143,7 @@ function hook(){
  this.score=function(){
    d= dist(this.x, this.y, moana.x, moana.y);
    if (d<50){
-   location.href("gravity.html");
+   location.href"gravity.html";
    }
      
    }
@@ -149,9 +152,7 @@ function hook(){
 }
 
 
-function restart(){
-  location.href=("levelone.html");
-}
+
 </script>
   </body>
 </html>

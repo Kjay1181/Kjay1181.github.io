@@ -1,6 +1,6 @@
 function jumper(){
-     this.x=500;
-     this.y=h;
+     this.x=50;
+     this.y=0;
      this.gravity=0.5;// the force of gravity
      this.lift=-10;//opposing force of gravity
      this.velocity=0;// speed of gravity

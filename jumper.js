@@ -9,6 +9,10 @@ function jumper(){
       this.show=function(){
       
       image(user,this.x,this.y,this.width,this.height);
+      if(this.y>h){
+        this.velocity= 0;
+      }
+        
       }
       this.up=function(){
         this.velocity+=this.lift;//when I go up im gonna impose the gravity by negative ten
@@ -17,6 +21,7 @@ function jumper(){
         this.move= function(){
             if(keyIsDown(65) && (this.x > 0)){//when a button is pressed moves left
         this.x-=10;
+        
       }
     if (keyIsDown(68)&& (this.x< w-0)){//when d button is pressed moves right
       this.x+=10;

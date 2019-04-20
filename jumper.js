@@ -14,7 +14,7 @@ function jumper(){
         
       
       this.up=function(){
-        this.velocity+=this.lift;//when I go up im gonna impose the gravity by negative ten
+        this.velocity-=this.lift;//when I go up im gonna impose the gravity by negative ten
         
       }
         this.move= function(){
@@ -51,4 +51,4 @@ function jumper(){
     }
       
     }
-    }
+    

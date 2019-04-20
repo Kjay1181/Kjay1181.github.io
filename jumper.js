@@ -37,14 +37,13 @@ function jumper(){
       this.x+=10;
     }
       
+    if (keyIsDown(32)){
+      this.y-=10;
     }
+          
+        }
   
 
         
 }
-    function keyPressed(){//reserved name in order to press a key call this name
-      if (keyCode===32){
-      jumper.up();
-    }
-      
-    }
+    

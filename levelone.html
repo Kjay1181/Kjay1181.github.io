@@ -18,7 +18,7 @@
       var bgimage;
       var animal;
       var bgmusic;
-      var moana;
+      var user;
       var power;
       var moana= new moana();
       var crab= new crab();
@@ -27,7 +27,7 @@
       function preload(){
         bgimage=loadImage("crablair.jpg");
         bgimage.resize(w,h);
-         moana =loadImage("moana.png");
+         user =loadImage("moana.png");
         bgmusic=loadSound("shiny.mp3");
         animal= loadImage("tamatoa.png");
         power=loadImage("hook.png");
@@ -64,7 +64,7 @@
      this.velocity=0;// speed of gravity
            
              this.show=function(){
-          image(moana,this.x, this.y,this.width, this.height);
+          image(user,this.x, this.y,this.width, this.height);
           if(this.y>h){
         this.gravity= 0;
       }
@@ -101,7 +101,7 @@
       }
     function keyPressed(){//reserved name in order to press a key call this name
       if (keyCode===32){
-      jumper.up();
+      moana.up();
     }
     
     }

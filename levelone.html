@@ -91,7 +91,7 @@ function crab(){
  var x=0;
  var speed=3;// speed of the crab
   this.x=100;//starts off of the screen
- this.y= 100;// random point on the y axis
+ this.y= Math.floor(Math.random()*h);// random point on the y axis
   this.width=100;
   this.height=100;
   this.show=function(){
@@ -100,11 +100,11 @@ function crab(){
   }
   this.update=function(){//makes the ball fall down
  
- if (this.x > w){
+ if (this.x > w){// if the crab is off the screen push it back left
 speed=-3;
 
  }
- if (this.x<0){
+ if (this.x<0){// if the crab is off the screen push it back right
    speed=3;
  }
 this.x= this.x+speed;

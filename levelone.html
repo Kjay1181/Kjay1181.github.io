@@ -88,7 +88,7 @@
       }
     
 function crab(){
- var speed=7;// speed of the crab
+ var z=3;// speed of the crab
   this.x=100;//starts off of the screen
  this.y= 100;// random point on the y axis
   this.width=100;
@@ -100,7 +100,7 @@ function crab(){
   this.update=function(){//makes the ball fall down
  
  if (this.x > w){
-  
+  this.x= this.x-z;
 window.alert("off screen")
  }
   

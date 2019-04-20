@@ -49,7 +49,6 @@
       function draw(){
         background(bgimage);
         moana.show();
-        moana.up();
         moana.update();
         crab.show();
         crab.update();
@@ -62,18 +61,13 @@
         this.y=500;
         this.width=150;
         this.height=150;
-        this.gravity=0.5;// the force of gravity
-     this.lift=-10;//opposing force of gravity
-     this.velocity=0;// speed of gravity
+       
            
              this.show=function(){
           image(user,this.x, this.y,this.width, this.height);
            
         }
-         this.up=function(){
-        this.velocity+=this.lift;//when I go up im gonna impose the gravity by negative ten
         
-      }
         this.move= function(){
             if(keyIsDown(65) && (this.x > 0)){//when a button is pressed moves left
         this.x-=10;
@@ -85,21 +79,7 @@
       
     }
         
-        this.update=function(){//makes the ball fall down
-          this.velocity+= this.gravity;
-          this.y+=this.velocity;
-          this.velocity*=0.9;
-          if(this.y > h){// stops on the floor
-            this.y= h;
-            this.velocity=0;
-          }
-          if (this.y<0){//stops on the ceiling
-         this.y=0;
-          this.velocity=0;
-          
-          }
-        }
-      }
+    
     function keyPressed(){//reserved name in order to press a key call this name
       if (keyCode===32){
       moana.up();
@@ -150,8 +130,8 @@ speed=7;
 function hook(){
   this.x=Math.floor(Math.random()*w);
   this.y=Math.floor(Math.random()*h);
-  this.width=50;
-  this.height=50;
+  this.width=100;
+  this.height=100;
   this.count=0;
   this.show=function(){
     

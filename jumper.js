@@ -38,14 +38,14 @@ function jumper(){
     }
       
     
-          function keypressed(){
+         
+        }
+  
+ function keypressed(){
             if (keycode===32){
               jumper.up();
             }
           }
-        }
-  
-
         
 }
     

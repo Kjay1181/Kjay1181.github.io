@@ -61,6 +61,7 @@ color:white;
         moana.move();
         crab.show();
         crab.update();
+        crab.lose();
         hook.show();
         hook.score();
       }
@@ -103,7 +104,6 @@ function crab(){
  this.y= Math.floor(Math.random()*h);// random point on the y axis
   this.width=100;
   this.height=100;
-  dTwo= dist(this.x, this.y, moana.x,moana.y);
   this.show=function(){
     
     image(animal,this.x,this.y,this.width,this.height);
@@ -120,7 +120,11 @@ speed=-3;
 this.x= this.x+speed;
 }
 
-  if (dTwo<50){
+  
+  }
+  this.lose= function(){
+    dTwo= dist(this.x, this.y, moana.x,moana.y);
+    if (dTwo<50){
      noLoop();
          document.getElementById("youlose").innerHTML="Try again?";
         button= createButton("restart");
@@ -129,6 +133,7 @@ this.x= this.x+speed;
         loss.play();
   }
 }
+
  
 function hook(){
   this.x=Math.floor(Math.random()*w);

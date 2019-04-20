@@ -78,16 +78,13 @@
     if (keyIsDown(68)&& (this.x< w-0)){//when d button is pressed moves right
       this.x+=10;
     }
-      
+      if (keyIsDown(32)&& this.y<0){
+        this.y+=10'
+      }
     }
         
     
-    function keyPressed(){//reserved name in order to press a key call this name
-      if (keyCode===32){
-      moana.up();
-    }
-    
-    }
+   
       }
     
 function crab(){

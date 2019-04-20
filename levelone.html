@@ -88,7 +88,8 @@
       }
     
 function crab(){
- var z=3;// speed of the crab
+ var x=0;
+ var speed=3;// speed of the crab
   this.x=100;//starts off of the screen
  this.y= 100;// random point on the y axis
   this.width=100;
@@ -100,10 +101,10 @@ function crab(){
   this.update=function(){//makes the ball fall down
  
  if (this.x > w){
-  this.x= this.x-z;
-window.alert("off screen")
+speed=-3;
+
  }
-  
+this.x= this.x+speed;
 }
 }
   //hitOne=collideRectCircle(crab.x,crab.y,crab.width/2,crab.height/2,moana.x,moana.y,150);// collision betweeen the user and the crab

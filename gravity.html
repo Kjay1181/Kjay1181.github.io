@@ -113,7 +113,7 @@ color:white;
         jumper.width/2);
 if (hit=== true){
   noLoop();
-   document.getElementById("youlose").innerHTML="you lose hahaha";
+   document.getElementById("youlose").innerHTML="Try again?";
     button= createButton("restart");
         button.position(500,500);
          button.mousePressed(reload);
@@ -122,7 +122,7 @@ if (hit=== true){
       hitOne=collideRectCircle(platform.x,platform.y,platform.width/2,platform.height/2,jumper.x,jumper.y,50);// collision betweeen the user and the crab
         if (hitOne=== true){
           noLoop();
-         document.getElementById("youlose").innerHTML="you lose hahaha";
+         document.getElementById("youlose").innerHTML="Try again?";
         button= createButton("restart");
         button.position(500,500);
         button.mousePressed(reload);

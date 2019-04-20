@@ -20,9 +20,11 @@
       var bgmusic;
       var user;
       var power;
+      var loss;
       var moana= new moana();
       var crab= new crab();
       var hook= new hook();
+       var hitOne=false;// collision betweeen the user and the crab
       
       function preload(){
         bgimage=loadImage("crablair.jpg");
@@ -31,7 +33,8 @@
         bgmusic=loadSound("shiny.mp3");
         animal= loadImage("tamatoa.png");
         power=loadImage("hook.png");
-        bgmusic= loadSound("shiny.mp3")
+        bgmusic= loadSound("shiny.mp3");
+        loss= loadSound("youlose.mp3");
       }
       function setup(){
         createCanvas(w,h);
@@ -65,9 +68,10 @@
            
              this.show=function(){
           image(user,this.x, this.y,this.width, this.height);
-          if(this.y>h){
+            if(this.y>h){
         this.gravity= 0;
       }
+      
         }
          this.up=function(){
         this.velocity+=this.lift;//when I go up im gonna impose the gravity by negative ten
@@ -135,6 +139,17 @@ speed=7;
 }
 
 }
+  hitOne=collideRectCircle(crab.x,crab.y,crab.width/2,crab.height/2,moana.x,moana.y,50);// collision betweeen the user and the crab
+        if (hitOne=== true){
+          noLoop();
+         document.getElementById("youlose").innerHTML="Try Again?";
+        button= createButton("restart");
+        button.position(500,500);
+        button.mousePressed(reload);
+        loss.play();
+        
+          
+        }
 function hook(){
   this.x=Math.floor(Math.random()*w);
   this.y=Math.floor(Math.random()*h);
@@ -157,7 +172,9 @@ function hook(){
 }
 
 
-
+function restart(){
+  location.href="levelone.html";
+}
 
     </script>
   </body>

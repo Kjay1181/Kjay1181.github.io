@@ -37,7 +37,7 @@ function jumper(){
       this.x+=10;
     }
       
-    if (keyIsDown(32)){
+    if (keycode===32){
       this.y-=10;
     }
           

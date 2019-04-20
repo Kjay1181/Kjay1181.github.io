@@ -37,15 +37,13 @@ function jumper(){
       this.x+=10;
     }
       
-    
-         
+    if (keycode===32){
+      this.y-=10;
+    }
+          
         }
   
- function keypressed(){
-            if (keycode===32){
-              jumper.up();
-            }
-          }
+
         
 }
     

@@ -10,7 +10,7 @@ function jumper(){
       
       image(user,this.x,this.y,this.width,this.height);
       if(this.y>h){
-        this.velocity= 0;
+        this.gravity= 0;
       }
         
       }

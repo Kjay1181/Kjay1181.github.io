@@ -1,0 +1,18 @@
+<html lang="en">
+  <head>
+    <script src="p5/p5.min.js"></script>
+  </head>
+  <body>
+    <h1 id='ax'></h1>
+    <script>
+         var ax;// acceleration of the x
+          function setup(){
+            createCanvas(window.innerWidth, window.innerHeight);
+          }
+          function draw(){
+            ax= acceleration;
+            document.getElementById("ax").innerHTML="acceleration"+" "+ax;
+          }
+    </script>
+  </body>
+</html>

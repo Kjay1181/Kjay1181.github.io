@@ -6,11 +6,12 @@
     <h1 id='ax'></h1>
     <script>
          var ax;// acceleration of the x
+         var axhigh;//stores the highest x value.
           function setup(){
             createCanvas(window.innerWidth, window.innerHeight);
           }
           function draw(){
-            ax= acceleration;
+            ax= accelerationX;
             document.getElementById("ax").innerHTML="acceleration"+" "+ax;
           }
     </script>

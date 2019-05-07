@@ -3,9 +3,10 @@
     <script src="p5/p5.min.js"></script>
   </head>
   <body>
-    <h1 id='rz'></h1>
+    
     <h1 id="rx"></h1>
     <h1 id="ry"></h1>
+    <h1 id='rz'></h1>
     <script>
          var rz=0;
          var rx=0;
@@ -15,11 +16,13 @@
           }
           function draw(){
             rz=rotationZ;
-            rx=rotaionX;
+            rx=rotationX;
             ry=rotationY;
+             document.getElementById("rx").innerHTML= "X="+rx;
+             document.getElementById("ry").innerHTML= "Y="+ry;
             document.getElementById("rz").innerHTML= "Z="+rz;
-            document.getElementById("rx").innerHTML= "X="+rx;
-            document.getElementById("ry").innerHTML= "Y="+ry;
+          
+           
                       }
           
     </script>

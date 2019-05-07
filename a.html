@@ -8,8 +8,8 @@
     <script>
          var ax;// acceleration of the x
          var axHigh=0;//stores the highest x value.
-         var rx;
-         var ry;
+         var rx;//rotation of X
+         var ry;//rotation of Y
           function setup(){
             createCanvas(window.innerWidth, window.innerHeight);
           }
@@ -21,10 +21,7 @@
             }
           rx=rotationX;
           document.getElementById("rx").innerHTML="rotation:"+rx;
-          ry=accelerationY;
-          if(ry>0){
-            window.alert("drop the phone");
-          }
+         
             
           }
           

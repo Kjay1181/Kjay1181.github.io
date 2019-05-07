@@ -5,11 +5,12 @@
   <body>
     <h1 id='ax'></h1>
     <h1 id="rx"></h1>
+    <h1 id="stop"></h1>
     <script>
          var ax;// acceleration of the x
          var axHigh=0;//stores the highest x value.
          var rx;//rotation of X
-         var ry;//rotation of Y
+         var ay;//rotation of Y
           function setup(){
             createCanvas(window.innerWidth, window.innerHeight);
           }
@@ -21,8 +22,10 @@
             }
           rx=rotationX;
           document.getElementById("rx").innerHTML="rotation:"+rx;
-         
-            
+         ay= accelerationY;
+            if (ay===90){
+              document.getElementById("stop").innerHTML="drop the phone";
+            }
           }
           
     </script>
